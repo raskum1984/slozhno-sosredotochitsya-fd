@@ -9,4 +9,35 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #353430;
+  --accent-color-rgb: 255, 141, 203;
+  --paragraph-text-color: #353430;
+  --footer-title-color: #ffc2e6;
+}
+
+html.theme-light .header__decoration {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #353430;
+    --accent-color-rgb: 255, 141, 203;
+    --paragraph-text-color: #353430;
+    --footer-title-color: #ffc2e6;
+  }
+
+  /* Остальные стили, только при необходимости */
+  html.theme-auto .header__decoration {
+    display: none;
+  }
 }
