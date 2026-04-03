@@ -1,5 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+body {
+  padding: 0;
+  margin: 0;
+}
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   display: flex;
@@ -31,8 +34,8 @@
   display: block;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--title-color);
+  border-right: 1px solid var(--title-color);
   top: 10px;
   right: 0px;
 }
@@ -43,8 +46,8 @@
   display: block;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--title-color);
+  border-bottom: 1px solid var(--title-color);
   left: 0px;
   bottom: 10px;
 }
@@ -72,7 +75,7 @@
   font-size: inherit;
   line-height: 1;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--title-color);
   text-transform: lowercase;
 }
 
@@ -85,11 +88,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--title-color);
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--title-color);
   pointer-events: none;
 }
 
@@ -268,7 +271,7 @@
 
   .content-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
   }
 

@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: #fff;
+  --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #ff8dcb;
   --title-color: #353430;
@@ -27,7 +27,7 @@ html.theme-light .header__decoration {
   :root {
     /* Дублируем только те же переменные, что и выше */
     --bg-image: url(../images/cover-image-light.png);
-    --bg-color: #fff;
+    --bg-color: #fff1f7;
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --title-color: #353430;
