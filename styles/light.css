@@ -14,7 +14,7 @@
   --text-color: #353430;
   --accent-color: #ff8dcb;
   --title-color: #353430;
-  --accent-color-rgb: 255, 141, 203;
+  --accent-color-rgb: 53, 52, 48;
   --paragraph-text-color: #353430;
   --footer-title-color: #ffc2e6;
 }
@@ -31,7 +31,7 @@ html.theme-light .header__decoration {
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --title-color: #353430;
-    --accent-color-rgb: 255, 141, 203;
+    --accent-color-rgb: 53, 52, 48;
     --paragraph-text-color: #353430;
     --footer-title-color: #ffc2e6;
   }
