@@ -12,7 +12,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color), #000028;
-  padding: 0 10px;
 }
 
 .header {
@@ -20,8 +19,8 @@
   grid-template-rows: 1fr min-content 1fr;
   min-height: max(100dvh, 668px);
   position: relative;
-  padding-top: 4px;
-  padding-bottom: 5px;
+  padding: 4px 10px 5px;
+  
 }
 
 .decorated-zone::before {
@@ -33,7 +32,7 @@
   border-top: 1px solid var(--title-color);
   border-right: 1px solid var(--title-color);
   top: 10px;
-  right: 0px;
+  right: 10px;
 }
 
 .decorated-zone::after {
@@ -44,7 +43,7 @@
   height: 25px;
   border-left: 1px solid var(--title-color);
   border-bottom: 1px solid var(--title-color);
-  left: 0px;
+  left: 10px;
   bottom: 10px;
 }
 
@@ -120,7 +119,7 @@
   position: absolute;
   text-transform: uppercase;
   top: 10px;
-  right: 10px;
+  right: 20px;
   line-height: 1.4;
   font-size: 18px;
   color: var(--accent-color);
@@ -140,6 +139,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding: 0 10px;
 }
 
 .content-section {
@@ -216,6 +216,7 @@
   align-items: center;
   min-height: max(100dvh, 668px);
   position: relative;
+  padding: 0 10px;
 }
 
 .footer__title {
@@ -230,16 +231,15 @@
 @media (width >= 768px) {
   .page {
     gap: 60px;
-    padding: 0 20px;
   }
 
   .header {
-    padding-bottom: 20px;
-    padding-top: 17px;
+    padding: 17px 20px 20px;
   }
 
   .main {
     gap: 80px;
+    padding: 0 20px;
   }
 
   .header__title {
@@ -255,14 +255,17 @@
 
   .decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .header__decoration {
     top: 20px;
+    right: 30px;
   }
 
   .content-section {
@@ -353,6 +356,10 @@
   .gallery__image--bottom-wide {
     grid-column: span 2;
     grid-row: span 1;
+  }
+
+  .footer {
+    padding: 0 20px;
   }
 }
 
