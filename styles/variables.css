@@ -6,7 +6,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --text-color: #000028;
-  --font-family: "IBM Plex Mono", sans-serif;
+  --font-family: "IBM Plex Mono", monospace;
   --font-weight: 400;
   --font-weight-bold: 700;
   --font-size: 18px;
@@ -15,4 +15,5 @@
   --accent-color-rgb: 255, 0, 112;
   --paragraph-text-color: #f1b2ce;
   --footer-title-color: #db00ff;
+  --display-none: none;
 }

@@ -20,7 +20,7 @@
 }
 
 html.theme-light .header__decoration {
-  display: none;
+  display: var(--display-none);
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,9 +35,11 @@ html.theme-light .header__decoration {
     --paragraph-text-color: #353430;
     --footer-title-color: #ffc2e6;
   }
-
-  /* Остальные стили, только при необходимости */
-  html.theme-auto .header__decoration {
-    display: none;
+  .header__decoration {
+    display: var(--display-none);
   }
+  /* Остальные стили, только при необходимости */
+  /*html.theme-light .header__decoration {*/
+    
+  /*}*/
 }

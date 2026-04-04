@@ -18,3 +18,7 @@
   --paragraph-text-color: #f1b2ce;
   --footer-title-color: #db00ff;
 }
+
+html.theme-dark .header__decoration {
+  display: flex;
+}

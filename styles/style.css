@@ -20,7 +20,6 @@
   min-height: max(100dvh, 668px);
   position: relative;
   padding: 4px 10px 5px;
-  
 }
 
 .decorated-zone::before {
@@ -72,6 +71,7 @@
   text-align: center;
   color: var(--title-color);
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -187,6 +187,23 @@
   color: var(--paragraph-text-color);
 }
 
+.article__paragraph-link:focus {
+  outline: none;
+}
+
+.article__paragraph-link:focus-visible {
+  outline: 1px solid var(--paragraph-text-color);
+}
+
+.article__paragraph-link {
+  text-decoration: none;
+  text-shadow: 4px 4px var(--accent-color);
+}
+
+.article__paragraph-link:hover {
+  border-bottom: 1px solid var(--paragraph-text-color);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr);
@@ -269,23 +286,14 @@
   }
 
   .content-section {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
   }
 
   .section_title {
     grid-column: 1 / 2;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
   }
 
   .section__article-list {
-    display: grid;
-    grid-template-rows: auto;
-    grid-gap: 20px;
     grid-column: 2 / -1;
   }
 
@@ -300,37 +308,17 @@
     grid-column: 1 / -1;
   }
 
-  .article__paragraph-link {
-    text-decoration: none;
-    text-shadow: 4px 4px var(--accent-color);
-  }
-
-  .article__paragraph-link:hover {
-    border-bottom: 1px solid var(--paragraph-text-color);
-  }
-
-  .article__paragraph-link:focus {
-    outline: none;
-  }
-
-  .article__paragraph-link:focus-visible {
-    outline: 1px solid var(--paragraph-text-color);
-  }
-
   .gallery__section {
-    display: grid;
     grid-template-columns: repeat(3, minmax(min-content, 3fr));
     gap: 20px;
   }
   .gallery {
-    display: grid;
-    grid-template-columns: minmax(min-content, 1fr);
     gap: 20px;
   }
 
   .gallery__image {
-    height: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   .gallery__image--top-wide {
@@ -365,19 +353,12 @@
 
 @media (width >= 1024px) {
   .section__article-list-alternate {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-column: 1 / -1;
   }
 
   .header {
     padding-bottom: 17px;
     padding-top: 20px;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu-list {
@@ -388,6 +369,10 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+  }
+
+  .content-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer__title {
